@@ -1,61 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>我的简历</title>
     <link rel="stylesheet" href="./a.css">
+    <script src="//at.alicdn.com/t/font_1080009_btq0tzoxrd9.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
-<body >
+
+<body>
     <div class="topNavBar clearfix">
-            <a class="logo" href="#" alt="logo">
-                <span class="RS">RS</span><span class="card">card</span>
-            </a>
-            <nav>
-                <ul class="clearfix">
-                    <li><a href="#">关于</a></li>
-                    <li><a href="#">技能</a></li>
-                    <li><a href="#">作品</a></li>
-                    <li><a href="#">博客</a></li>
-                    <li><a href="#">日历</a></li>
-                    <li><a href="#">联系方式</a></li>
-                </ul>
-            </nav>
+        <a class="logo" href="#" alt="logo">
+            <span class="RS">RS</span><span class="card">card</span>
+        </a>
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#">关于</a></li>
+                <li><a href="#">技能</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">日历</a></li>
+                <li><a href="#">联系方式</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="banner" style="background-image: url(#)"></div>
+    <div class="banner">
+        <div class="coverFilm"></div>
+    </div>
     <main>
-        <div class="card">
-                <div class="picture"><img src="" alt="头像"></div>
-                <div class="text">
-                    <div class="profile">
-                            <span class="welcome">Hello</span>
-                            <h1>文聪</h1>
-                            <p>前端开发</p>
-                            <hr>
-                            <dl>
-                                <dt>年龄</dt>
-                                <dd>25</dd>
-                                <dt>所在城市</dt>
-                                <dd>成都</dd>
-                                <dt>邮箱</dt>
-                                <dd>331089410@qq.com</dd>
-                                <dt>电话</dt>
-                                <dd>135</dd>
-                                <dt>到岗时间</dt>
-                                <dd>随时</dd>
-                                <dt>状态</dt>
-                                <dd>在职</dd>
-                            </dl>
-                    </div>
-                    <footer class="media">
-                            <a href="#"><img src="#" alt="..."></a>
-                            <a href="#"><img src="#" alt="..."></a>
-                            <a href="#"><img src="#" alt="..."></a>
-                            <a href="#"><img src="#" alt="..."></a>
-                            <a href="#"><img src="#" alt="..."></a>
-                            <a href="#"><img src="#" alt="..."></a>
-                            <a href="#"><img src="#" alt="..."></a>
-                    </div>
+        <div class="userCard">
+            <div class="protrictAndText clearfix">
+                <div class="portrait">
+                    <img src="./img/startuper-1-299x347.jpg" alt="头像">
                 </div>
+                <div class="text">
+                    <span class="welcome">HELLO
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>文聪</h1>
+                    <p>前端开发学徒</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>25</dd>
+                        <dt>所在城市</dt>
+                        <dd>成都</dd>
+                        <dt>邮箱</dt>
+                        <dd>331089410@qq.com</dd>
+                        <dt>电话</dt>
+                        <dd>135</dd>
+                        <dt>到岗时间</dt>
+                        <dd>随时</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <div class="vertical-center">
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-youxiang"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weibo"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weixin"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-icon00092"></use>
+                        </svg>
+                    </a>
+                </div>
+            </footer>
         </div>
         <a href="#" class="button">下载PDF简历</a>
         <p>
@@ -92,4 +128,5 @@
         </div>
     </section>
 </body>
+
 </html>

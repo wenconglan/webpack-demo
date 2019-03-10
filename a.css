@@ -1,7 +1,12 @@
 body {
     margin: 0;
     background: #313943;
-    color: white;
+    color: rgb(168, 60, 60);
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -11,11 +16,28 @@ ul {
 a {
     text-decoration: none;
 }
+hr{
+    height: 0;
+    border: none;
+    /*margin-top: 16px;*/
+    border-top: 1px solid #DEDEDE;
+  }
+
+.topNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+}
 
 .clearfix::after {
     content: '';
     display: block;
     clear: both;
+}
+
+.topNavBar>nav>ul {
+    padding: 16px 0;
 }
 
 .topNavBar>nav>ul>li {
@@ -40,7 +62,7 @@ a {
 
 .topNavBar>nav {
     float: right;
-    margin-right: 192px;
+    margin-right: 176px;
 }
 
 .topNavBar>.logo {
@@ -60,3 +82,114 @@ a {
 .topNavBar>.logo>.card {
     color: #9A9DA2;
 }
+.banner{
+    height: 515px;
+    background-image: url(./img/rs-cover-2-2-1-1.jpg);
+    /*background-size: contain;*/
+    background-size: cover;
+    background-position: center center;
+}
+.coverFilm{
+    height: 515px;
+    background-color: rgba(44, 51, 64, 0.8);
+}
+main{
+    background-color: #EFEFEF;
+}
+.userCard{
+    max-width: 930px;
+    margin:0 auto;
+    background-color: white;
+}
+.userCard>.protrictAndText{
+    padding: 58px 0 0 50px;
+}
+.userCard>.protrictAndText>.portrait{
+    float: left;
+    margin-right: 63px;
+    margin-bottom: 43px;
+}
+.userCard>.protrictAndText>.text{
+    float: left;
+    width: 470px;
+}
+.userCard>.protrictAndText>.text>.welcome{
+    font-size: 14px;
+    padding:6px 14px;
+    background-color: #E8676B;
+    font-weight: bold;
+    /*font-family: "Open Sans";*/
+    color:white;
+    position: relative;
+}
+.userCard>.protrictAndText>.text>.welcome>.triangle{
+    display: inline-block;
+    border-bottom:8px solid transparent;
+    border-left:8px solid #E8676B;
+    border-right:8px solid transparent;
+    width:0px;
+    position: absolute;
+    top:100%;
+    right: 50px;
+}
+.userCard>.protrictAndText>.text>h1{
+    font-size: 28px;
+    color: #3D4451;
+    margin-top: 36px;
+}
+.userCard>.protrictAndText>.text>p{
+    padding: 8px 0;
+    color: #3D4451;
+}
+.userCard>.protrictAndText>.text>hr{
+    margin: 16px 0 24px 0;
+}
+.userCard>.protrictAndText>.text>dl>dt,
+.userCard>.protrictAndText>.text>dl>dd{
+  float: left;
+  padding:7px 0;
+}
+.userCard>.protrictAndText>.text>dl>dt{
+    width: 30%;
+    font-weight: bold;
+    color:rgb(51, 51, 51);
+  }
+  .userCard>.protrictAndText>.text>dl>dd{
+    width: 70%;
+    color: rgb(157, 160, 167);
+  }
+  .userCard>footer{
+    background: #E8676B;
+    text-align: center;
+    height: 88px;
+    position: relative;
+  }
+  .userCard>footer>.vertical-center{
+    width: 470px;
+    top: 50%;
+    left: 50%;
+    margin-left: -235px;
+    height: 50px;
+    margin-top: -20px;
+    position: absolute;
+  }
+  .userCard>footer>.vertical-center>a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /*line-height: 30px;*/
+    border-radius: 50%;
+    margin:0 18px;
+    position: relative;
+  }
+  .userCard>footer>.vertical-center>a:hover{
+    background: #D05C60;
+  }
+  .userCard>footer>.vertical-center>a>svg{
+    width: 30px;
+    height: 30px; 
+    fill: white;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+  }
