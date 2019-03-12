@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #313943;
+    background-color: #EFEFEF;
     color: rgb(168, 60, 60);
 }
 
@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-ul {
+ul ,ol {
     list-style: none;
 }
 
@@ -21,6 +21,9 @@ hr{
     border: none;
     /*margin-top: 16px;*/
     border-top: 1px solid #DEDEDE;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
   }
 
 .topNavBar {
@@ -93,13 +96,14 @@ hr{
     height: 515px;
     background-color: rgba(44, 51, 64, 0.8);
 }
-main{
-    background-color: #EFEFEF;
-}
-.userCard{
+body>main{
     max-width: 930px;
     margin:0 auto;
+    margin-top: -346px;
+}
+.userCard{
     background-color: white;
+    box-shadow: 0px 0px 2px 1px rgba(138,131,138,0.82);
 }
 .userCard>.protrictAndText{
     padding: 58px 0 0 50px;
@@ -193,3 +197,158 @@ main{
     top: 9px;
     left: 10px;
   }
+  body>.downLoadPdf{
+      margin-top: 35px;
+  }
+  body>.downLoadPdf>.downLoadContainer{
+      text-align: center;
+  }
+  body>.downLoadPdf>.downLoadContainer>a{
+      display: inline-block;
+      min-width: 168px;
+      font-size: 15px;
+      line-height: 16px;
+      padding: 21px 55px;
+      color: rgb(61, 68, 81);
+      border: 1px solid  #CDCFD1;
+      transition: box-shadow 0.2s;
+      font-weight: bold;
+      border-radius: 2px;
+      margin-bottom: 30px;
+    }
+  body>.downLoadPdf>.downLoadContainer>a:hover{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+   }
+   body>.downLoadPdf>.resumeText{
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "楷体";
+    font-weight: 700;
+    line-height: 1.8;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 70px;
+   }
+   body>.sectionContainer{
+       text-align: center;
+   }
+   body>.sectionContainer h2,.sampleReels h2{
+       color: rgb(61, 68, 81);
+       font-size:34px;
+       font-weight: 600;
+       margin-bottom:25px;
+   }
+   body>.sectionContainer>.skills{
+       max-width: 930px;
+       margin: 0 auto;
+   }
+   .sectionContainer>.skills>ol{
+       display: flex;
+       flex-flow:row wrap;
+       justify-content: space-between;
+       align-items: center;
+       padding: 18px 50px 40px 50px;
+       background-color: white;
+       box-shadow: 0px 0px 2px 1px rgba(138,131,138,0.82);
+   }
+   .sectionContainer>.skills>ol>li{
+       width:48%;
+       padding:20px 0;
+   }
+   body>.sectionContainer>.skills li h3{
+       font-size: 14px;
+       font-weight: 400;
+       color: rgb(61, 68, 81);
+       line-height: 1.6;
+       text-align: left;
+   }
+   body>.sectionContainer>.skills li span{
+       display: block;
+       height: 4px;
+       background-color: #FAE1E1;
+       border-radius: 3px;
+   }
+  /* body>.sectionContainer>.skills li span::before{
+       content:'';
+       display: block;
+       background-color: #E8676B;
+       width: 80%;
+       height: 4px;
+   }*/
+   body>.sectionContainer>.skills p{
+      display: block;
+       background-color: #E8676B;
+       width: 80%;
+       height: 4px;
+       border-radius: 3px;
+   }
+   .sampleReels h2{
+       margin-top:70px;
+   }
+   .sectionContainer>.sampleReels{
+       text-align: center;
+   }
+   .sectionContainer>.sampleReels>nav{
+       text-align: center;
+       display: inline-block;
+   }
+   .sectionContainer>.sampleReels>nav>ol{
+        margin:10px 0 16px 0;
+   }
+   .sectionContainer>.sampleReels>nav li{
+        display: inline-block;
+        cursor: pointer;
+        padding: 0 25px;
+        color: rgb(34, 36, 41);
+        font-size: 16px;
+        font-weight: 600;
+        height: 1.2;
+   }
+   .sampleReels> nav .bar{
+    height: 5px;
+    background: white;
+    border-radius: 2px;
+    margin-bottom: 30px;
+  }
+   .sampleReels> nav .bar-inner{
+    height: 100%;
+    background: #E6686A;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .sampleReels > nav .bar.state-1 .bar-inner{
+    margin-left: 12px;
+    width: 60px;
+  }
+  .sampleReels > nav .bar.state-2 .bar-inner{
+    margin-left: 102px;
+    width: 60px;
+  }
+  .sampleReels > nav .bar.state-3 .bar-inner{
+    margin-left: 194px;
+    width: 105px;
+  }
+  .sectionContainer>.sampleReels>.workPicture{
+    max-width: 930px;
+    margin: 0 auto;
+    margin-bottom:200px;
+  }
+  .sampleReels>.workPicture>.bigPhoto{
+      float: left;
+      margin-right: 27px;
+  }
+  .sampleReels>.workPicture>.samllContainer{
+      float: left;
+  }
+  .sampleReels>.workPicture>.samllContainer>.smallPhoto1{
+      padding-bottom: 23px;
+  }
+  .sampleReels>.workPicture img{
+    box-shadow: 0px 0px 2px 1px rgba(138,131,138,0.82);
+  }
+
+
+
+
