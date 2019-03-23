@@ -26,53 +26,95 @@ hr{
     font-weight: normal;
   }
 
-.topNavBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-}
-
 .clearfix::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.topNavBar>nav>ul {
-    padding: 16px 0;
-}
-
-.topNavBar>nav>ul>li {
-    float: left;
-    margin: 6px 18px;
-}
-
-.topNavBar>nav>ul>li>a {
+.topNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 16px 0px;
+    transition: all 0.5s;
+    z-index: 1;
     color: #C0C3C6;
-    font-weight: bold;
-    font-size: 12px;
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    display: block;
 }
-
-.topNavBar>nav>ul>li>a:hover {
-    border-bottom: 3px solid #E8676B;
+.topNavBar.adhering{
+    background: #ffffff;
+    padding: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #3d4451;
 }
-
 .topNavBar>nav {
     float: right;
     margin-right: 176px;
+    
+}
+.topNavBar>nav>ul>li {
+    float: left;
+    margin: 6px 18px;
+    position: relative;
+}
+.topNavBar .secondMenu>.submenu{
+    display: none;
+    border:1px solid #D5D5D5;
+    color: #3d4451;
+    position: absolute;
+    top: 100%;
+    right: -18px;
+    background: #FAFAFA;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    animation: secondMenuSlide 0.3s;
+}
+@keyframes secondMenuSlide{
+    0%{margin-right:150%;}
+    100%{margin-right:0;}
+}
+.topNavBar .submenu>li{
+    padding: 3px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 12px;
+}
+.topNavBar>nav .submenu>li:hover{
+    color: rgb(232, 103, 107);
+}
+.topNavBar .secondMenu.active>.submenu{
+    display: block;
+}
+
+.topNavBar>nav>ul>li>a {
+    color: inherit;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 12px 0;
+    display: block;
+    position: relative;
+}
+
+.topNavBar>nav>ul>li>a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #E8676B;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    animation:  navSlide 0.3s;
+}
+@keyframes navSlide{
+    0%{width:0;}
+    100%{width:100%;}
 }
 
 .topNavBar>.logo {
     float: left;
     font-size: 24px;
-    padding-top: 27px;
-    padding-bottom: 21px;
+    padding-top: 10px;
     font-weight: bold;
 }
 
@@ -85,6 +127,7 @@ hr{
 .topNavBar>.logo>.card {
     color: #9A9DA2;
 }
+/*主要内容*/
 .banner{
     height: 515px;
     background-image: url(./img/rs-cover-2-2-1-1.jpg);

@@ -1,188 +1,224 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>我的简历</title>
-    <link rel="stylesheet" href="./a.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./loading.css" />
     <script src="//at.alicdn.com/t/font_1080009_btq0tzoxrd9.js"></script>
     <style type="text/css">
-        .icon {
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-        }
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
     </style>
-</head>
+    <script>
+        /*监听用户滚动*/
+      window.onscroll = function(xxx) {
+        if (window.scrollY > 0) {
+          topNavBar.classList.add('adhering')
+        } else {
+          topNavBar.classList.remove('adhering')
+        }
+      }
+    </script>
+  </head>
 
-<body>
-    <div class="topNavBar clearfix">
-        <a class="logo" href="#" alt="logo">
-            <span class="RS">RS</span><span class="card">card</span>
-        </a>
-        <nav>
-            <ul class="clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
+  <body>
+    <div id="welcomePage" class="welcomePage active">
+      <div class="loadingPicture"></div>
+    </div>
+    <div id="topNavBar" class="topNavBar">
+      <a class="logo" href="#" alt="logo">
+        <span class="RS">RS</span><span class="card">card</span>
+      </a>
+      <nav class="menu">
+        <ul class="clearfix">
+          <li><a href="#siteAbout">关于</a></li>
+          <li><a href="#siteSkills">技能</a></li>
+          <li class="secondMenu">
+            <a href="#siteWorks">作品</a>
+            <ul class="submenu">
+              <li>作品1</li>
+              <li>作品2</li>
+              <li>作品3</li>
             </ul>
-        </nav>
+          </li>
+          <li class="secondMenu">
+            <a href="#">博客</a>
+            <ul class="submenu">
+              <li>博客1</li>
+              <li>博客2</li>
+              <li>博客3</li>
+              <li>博客4</li>
+            </ul>
+          </li>
+          <li><a href="#">日历</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">其它</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="banner">
-        <div class="coverFilm"></div>
+      <div class="coverFilm"></div>
     </div>
     <main>
-        <div class="userCard">
-            <div class="protrictAndText clearfix">
-                <div class="portrait">
-                    <img src="./img/startuper-1-299x347.jpg" alt="头像">
-                </div>
-                <div class="text">
-                    <span class="welcome">HELLO
-                        <span class="triangle"></span>
-                    </span>
-                    <h1>文聪</h1>
-                    <p>前端开发学徒</p>
-                    <hr>
-                    <dl>
-                        <dt>年龄</dt>
-                        <dd>25</dd>
-                        <dt>所在城市</dt>
-                        <dd>成都</dd>
-                        <dt>邮箱</dt>
-                        <dd>331089410@qq.com</dd>
-                        <dt>电话</dt>
-                        <dd>135</dd>
-                        <dt>到岗时间</dt>
-                        <dd>随时</dd>
-                    </dl>
-                </div>
-            </div>
-            <footer class="media">
-                <div class="vertical-center">
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-github"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-youxiang"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-weibo"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-weixin"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-icon00092"></use>
-                        </svg>
-                    </a>
-                </div>
-            </footer>
+      <div id="siteAbout" class="userCard">
+        <div class="protrictAndText clearfix">
+          <div class="portrait">
+            <img src="./img/startuper-1-299x347.jpg" alt="头像" />
+          </div>
+          <div class="text">
+            <span class="welcome"
+              >HELLO
+              <span class="triangle"></span>
+            </span>
+            <h1>文聪</h1>
+            <p>前端开发学徒</p>
+            <hr />
+            <dl>
+              <dt>年龄</dt>
+              <dd>25</dd>
+              <dt>所在城市</dt>
+              <dd>成都</dd>
+              <dt>邮箱</dt>
+              <dd>331089410@qq.com</dd>
+              <dt>电话</dt>
+              <dd>135</dd>
+              <dt>到岗时间</dt>
+              <dd>随时</dd>
+            </dl>
+          </div>
         </div>
+        <footer class="media">
+          <div class="vertical-center">
+            <a href="#">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-github"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-youxiang"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weibo"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weixin"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-icon00092"></use>
+              </svg>
+            </a>
+          </div>
+        </footer>
+      </div>
     </main>
     <div class="downLoadPdf">
-        <p class="downLoadContainer">
-            <a href="./resume.pdf" class="downLoadButton" target="_blank" download="">下载PDF简历</a>
-        </p>
-        <p class="resumeText">
-            文聪，初级前端学习者，正在学习前端开发技术初级前端学习者，正在学习前端开发技术初级前端学习者，正在学习前端开发技术初级前端学习者，正在学习前端开发技术<br>
-            技能：前端开发，Rails 开发，Node.js 开发
-        </p>
+      <p class="downLoadContainer">
+        <a
+          href="./resume.pdf"
+          class="downLoadButton"
+          target="_blank"
+          download=""
+          >下载PDF简历</a
+        >
+      </p>
+      <p class="resumeText">
+        文聪，初级前端学习者，正在学习前端开发技术初级前端学习者，正在学习前端开发技术初级前端学习者，正在学习前端开发技术初级前端学习者，正在学习前端开发技术<br />
+        技能：前端开发，Rails 开发，Node.js 开发
+      </p>
     </div>
     <div class="sectionContainer">
-        <section class="skills">
-            <h2 class="titleh2">技能</h2>
-            <ol>
-                <li>
-                    <h3>HTML 5 &amp; CSS 3</h3>
-                    <span>
-                        <p style="width:80%;"></p>
-                    </span>
-                </li>
-                <li>
-                    <h3>JavaScript</h3>
-                    <span>
-                        <p style="width:90%;"></p>
-                    </span>
-                </li>
-                <li>
-                    <h3>jQuery.JS</h3>
-                    <span>
-                        <p style="width:50%;"></p>
-                    </span>
-                </li>
-                <li>
-                    <h3>Vue.JS</h3>
-                    <span>
-                        <p style="width:98%;"></p>
-                    </span>
-                </li>
-                <li>
-                    <h3>React.JS</h3>
-                    <span>
-                        <p style="width:65%;"></p>
-                    </span>
-                </li>
-                <li>
-                    <h3>HTTP</h3>
-                    <span>
-                        <p style="width:95%;"></p>
-                    </span>
-                </li>
-            </ol>
-        </section>
-        <section class="sampleReels">
-            <h2 class="titleh2">作品集</h2>
-            <nav>
-                <ol>
-                    <li id="portfolio1">所有</li>
-                    <li id="portfolio2">框架</li>
-                    <li id="portfolio3">原生JS&amp;CSS</li>
-                </ol>
-                <div id="portfolioBar" class="bar state-1">
-                    <div class="bar-inner"></div>
-                </div>
-            </nav>
-            <script>
-                portfolio1.onclick = function () {
-                    portfolioBar.className = 'bar state-1'
-                }
-                portfolio2.onclick = function () {
-                    portfolioBar.className = 'bar state-2'
-                }
-                portfolio3.onclick = function () {
-                    portfolioBar.className = 'bar state-3'
-                }
-            </script>
-            <div class="workPicture clearfix">
-                <div class="bigPhoto">
-                    <img src="./img/1.jpg" alt="作品1">
-                </div>
-                <div class="samllContainer">
-                    <div class="smallPhoto1">
-                        <img src="./img/2.jpg" alt="作品2">
-                    </div>
-                    <div class="smallPhoto2">
-                        <img src="./img/3.jpg" alt="作品3">
-                    </div>
-                </div>
+      <section id="siteSkills" class="skills">
+        <h2 class="titleh2">技能</h2>
+        <ol>
+          <li>
+            <h3>HTML 5 &amp; CSS 3</h3>
+            <span>
+              <p style="width:80%;"></p>
+            </span>
+          </li>
+          <li>
+            <h3>JavaScript</h3>
+            <span>
+              <p style="width:90%;"></p>
+            </span>
+          </li>
+          <li>
+            <h3>jQuery.JS</h3>
+            <span>
+              <p style="width:50%;"></p>
+            </span>
+          </li>
+          <li>
+            <h3>Vue.JS</h3>
+            <span>
+              <p style="width:98%;"></p>
+            </span>
+          </li>
+          <li>
+            <h3>React.JS</h3>
+            <span>
+              <p style="width:65%;"></p>
+            </span>
+          </li>
+          <li>
+            <h3>HTTP</h3>
+            <span>
+              <p style="width:95%;"></p>
+            </span>
+          </li>
+        </ol>
+      </section>
+      <section id="siteWorks" class="sampleReels">
+        <h2 class="titleh2">作品集</h2>
+        <nav>
+          <ol>
+            <li id="portfolio1">所有</li>
+            <li id="portfolio2">框架</li>
+            <li id="portfolio3">原生JS&amp;CSS</li>
+          </ol>
+          <div id="portfolioBar" class="bar state-1">
+            <div class="bar-inner"></div>
+          </div>
+        </nav>
+        <script>
+          portfolio1.onclick = function() {
+            portfolioBar.className = 'bar state-1'
+          }
+          portfolio2.onclick = function() {
+            portfolioBar.className = 'bar state-2'
+          }
+          portfolio3.onclick = function() {
+            portfolioBar.className = 'bar state-3'
+          }
+        </script>
+        <div class="workPicture clearfix">
+          <div class="bigPhoto">
+            <img src="./img/1.jpg" alt="作品1" />
+          </div>
+          <div class="samllContainer">
+            <div class="smallPhoto1">
+              <img src="./img/2.jpg" alt="作品2" />
             </div>
-        </section>
+            <div class="smallPhoto2">
+              <img src="./img/3.jpg" alt="作品3" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>
