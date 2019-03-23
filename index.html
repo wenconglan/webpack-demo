@@ -16,7 +16,6 @@
       }
     </style>
     <script>
-        /*监听用户滚动*/
       window.onscroll = function(xxx) {
         if (window.scrollY > 0) {
           topNavBar.classList.add('adhering')
@@ -26,7 +25,6 @@
       }
     </script>
   </head>
-
   <body>
     <div id="welcomePage" class="welcomePage active">
       <div class="loadingPicture"></div>
@@ -66,7 +64,7 @@
       <div class="coverFilm"></div>
     </div>
     <main>
-      <div id="siteAbout" class="userCard">
+      <div data-skipLabel id="siteAbout" class="userCard">
         <div class="protrictAndText clearfix">
           <div class="portrait">
             <img src="./img/startuper-1-299x347.jpg" alt="头像" />
@@ -140,7 +138,7 @@
       </p>
     </div>
     <div class="sectionContainer">
-      <section id="siteSkills" class="skills">
+      <section data-skipLabel id="siteSkills" class="skills">
         <h2 class="titleh2">技能</h2>
         <ol>
           <li>
@@ -181,7 +179,7 @@
           </li>
         </ol>
       </section>
-      <section id="siteWorks" class="sampleReels">
+      <section data-skipLabel id="siteWorks" class="sampleReels">
         <h2 class="titleh2">作品集</h2>
         <nav>
           <ol>
@@ -219,6 +217,7 @@
         </div>
       </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
