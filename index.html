@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>我的简历</title>
-    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./loading.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/swiper/dist/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <script src="//at.alicdn.com/t/font_1080009_btq0tzoxrd9.js"></script>
     <style type="text/css">
       .icon {
@@ -183,9 +187,9 @@
         <h2 class="titleh2">作品集</h2>
         <nav>
           <ol>
-            <li id="portfolio1">所有</li>
-            <li id="portfolio2">框架</li>
-            <li id="portfolio3">原生JS&amp;CSS</li>
+            <li id="portfolio1">导航</li>
+            <li id="portfolio2">画板</li>
+            <li id="portfolio3">无缝轮播</li>
           </ol>
           <div id="portfolioBar" class="bar state-1">
             <div class="bar-inner"></div>
@@ -202,22 +206,44 @@
             portfolioBar.className = 'bar state-3'
           }
         </script>
-        <div class="workPicture clearfix">
-          <div class="bigPhoto">
-            <img src="./img/1.jpg" alt="作品1" />
+        <!-- //添加swiper轮播 -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <img src="./img/works/myBookMarks.jpg" class="swiper-slide">
+            <img src="./img/works/canvas.jpg" class="swiper-slide">
+            <img src="./img/works/slide-demo.jpg" class="swiper-slide">
+            <img src="" alt="">
           </div>
-          <div class="samllContainer">
-            <div class="smallPhoto1">
-              <img src="./img/2.jpg" alt="作品2" />
-            </div>
-            <div class="smallPhoto2">
-              <img src="./img/3.jpg" alt="作品3" />
-            </div>
-          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
         </div>
       </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
+    <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script>
+      console.log(window.Swiper)
+      var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination'
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      })
+    </script>
     <script src="./main.js"></script>
   </body>
 </html>
