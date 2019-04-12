@@ -412,6 +412,9 @@ section.skills.offset p {
   height: 25px;
   border-radius: 50%;
 }
+section.message{
+  margin-bottom: 200px;
+}
 section.message>h2,
 section.message>form{
   text-align: center;
