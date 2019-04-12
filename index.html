@@ -202,26 +202,40 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <img src="./img/works/myBookMarks.jpg" class="swiper-slide">
-            <img src="./img/works/canvas.jpg" class="swiper-slide">
-            <img src="./img/works/slide-demo.jpg" class="swiper-slide">
-            <img src="" alt="">
+            <img src="./img/works/myBookMarks.jpg" class="swiper-slide" />
+            <img src="./img/works/canvas.jpg" class="swiper-slide" />
+            <img src="./img/works/slide-demo.jpg" class="swiper-slide" />
+            <img src="" alt="" />
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
           <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
     </div>
+    <section class="message">
+      <h2>留言</h2>
+      <ol id="messageList">
+      </ol>
+      <form id="postMessageForm">
+        <label for="name">姓名</label>
+        <input type="text" name="name">
+        <label for="content">留言内容</label>
+        <input type="text" name="content" />
+        <input type="submit" value="提交" />
+      </form>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
     <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="./node_modules/leancloud-storage/dist/av-min.js"></script>
     <!-- 模块化的js -->
-    <script src="./js/init-swiper.js" ></script>
+    <script src="./js/init-swiper.js"></script>
     <script src="./js/auto-slide-up.js"></script>
     <script src="./js/sticky-topbar.js"></script>
     <script src="./js/smoothly-topbar.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/message.js"></script>
   </body>
 </html>

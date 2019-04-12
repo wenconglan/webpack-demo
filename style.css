@@ -305,7 +305,8 @@ body > .sectionContainer {
   text-align: center;
 }
 body > .sectionContainer h2,
-.sampleReels h2 {
+.sampleReels h2,
+.message h2 {
   color: rgb(61, 68, 81);
   font-size: 34px;
   font-weight: 600;
@@ -359,7 +360,7 @@ section.skills.offset p {
 }
 .sectionContainer > .sampleReels {
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 70px;
 }
 .sectionContainer > .sampleReels > nav {
   text-align: center;
@@ -410,4 +411,23 @@ section.skills.offset p {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+}
+section.message>h2,
+section.message>form{
+  text-align: center;
+  color: black;
+}
+section.message > ol{
+  max-width:930px;
+  margin:0 auto;
+  background: #f4f4f4;
+  border-top:1px solid #ddd;
+}
+section.message > ol>li{
+padding: 16px;
+font-family: '楷体';
+color: black;
+border-bottom: 1px solid #ddd;
+border-left: 1px solid #ddd;
+border-right: 1px solid #ddd;
 }
