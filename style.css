@@ -37,6 +37,13 @@ h6 {
   display: block;
   clear: both;
 }
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
 [data-skipLabel].offset {
   transform: translateY(200px);
 }
@@ -403,5 +410,4 @@ section.skills.offset p {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  
 }
