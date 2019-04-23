@@ -126,8 +126,8 @@ var update = __webpack_require__(6)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
-		var newContent = require("!!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/lib/loader.js!./main.scss");
+	module.hot.accept("!!../../node_modules/css-loader/dist/cjs.js??ref--1-1!../../node_modules/postcss-loader/src/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
+		var newContent = require("!!../../node_modules/css-loader/dist/cjs.js??ref--1-1!../../node_modules/postcss-loader/src/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -158,7 +158,7 @@ if(false) {
 
 exports = module.exports = __webpack_require__(5)(false);
 // Module
-exports.push([module.i, "body {\n  background: #ddd; }\n\nbody p {\n  color: green; }\n\nbody p span {\n  color: red; }\n", ""]);
+exports.push([module.i, "body{background:#ddd;display:flex}body p{color:green}body p span{color:red}", ""]);
 
 
 
